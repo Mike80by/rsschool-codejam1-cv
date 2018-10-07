@@ -17,27 +17,89 @@
 					<li>+375 29 6858515</li>
 					<li>Minsk</li>
 					<li>mike80by@gmail.com</li>
-					<li></li>
 				</ul>
 			</div>
 		</header>
 		<main>
-			<section>
+			<section class="left_block">
 				<article>
-					
+					<h3>Summary</h3>
+					<p>Hello. You know my name from the header. So I will start without introduction. I am junior front-end developer (without any real background) and I'm improving my skills 24/7. My main aim is to be awesome front-end developer. I have all for that - motivation, persistence and energy. And the main thing - I adore front-end. That's why you should better to interest in my person.</p>
 				</article>
+				<div class="list_left_block">
+					<h3>Skills</h3>
+					<ul>
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>Bootstrap</li>
+						<li>Sass</li>
+						<li>JavaScript</li>
+						<li>TypeScript</li>
+						<li>GIT</li>
+					</ul>
+				</div>
 			</section>
-			<section>
-				<h3>Summary</h3>
-			</section>
-			<section>
-				<h3>Experience</h3>
-			</section>
-			<section>
-				<h3>Skills</h3>
-			</section>
-			<section>
-				<h3>Education</h3>
+			<section class="right_block">
+				<div class="code_block">
+					<h3>Code</h3>
+					<code><pre>
+						function solveSudoku(matrix) {
+						  for (let i = 0, len = matrix.length; i < len; i++) {
+  							for (let j = 0, lenI = matrix[i].length; j < lenI; j++) {
+  								if (matrix[i][j] === 0) {
+  									matrix[i][j] = [1,2,3,4,5,6,7,8,9];
+  									for (let k = 0, lenIJ = matrix[i][j].length; k < lenIJ; k++) {
+  										for (let l = 1; l < lenI; l++) {
+  											if (matrix[i][j][k] === matrix[l][j]) {
+  												matrix[i][j].splice(k, 1);
+  												if (matrix[i][j].length === 1) {
+  													matrix[i][j] = matrix[i][j][0];
+  												}
+  											}
+  										}
+  									}
+  								}
+  							}
+  						}
+  						for (let i = 0, len = matrix.length; i < len; i++) {
+  							for (let j = 0, lenI = matrix[i].length; j < lenI; j++) {
+  								for (let k = 0, lenIJ = matrix[i][j].length; k < lenIJ; k++) {
+  									for (let l = 1; l < lenI; l++) {
+  										if (matrix[i][j][k] === matrix[i][l])	{
+  											matrix[i][j].splice(k, 1);
+  											if (matrix[i][j].length === 1) {
+  												matrix[i][j] = matrix[i][j][0];
+  											}
+  										}	
+  									} 
+  								}
+  							}
+  						}
+  						return matrix;
+						}
+					</pre></code>
+				</div>
+				<div>
+					<h3>Experience</h3>
+					<p>GitHub: <a href="https://github.com/Mike80by">https://github.com/Mike80by</a></p>
+				</div>
+				<div>
+					<h3>Education</h3>
+					<ul>
+						<li>The Rolling Scopes School</li>
+						<li>Learn.javascript.ru "JavaScript/DOM/interfaces"</li>
+						<li>Belarusian National Technical University <br>
+						"Marketing, Management and Entrepreneurship" <br>
+						Bachelor of Economics</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Languages</h3>
+					<ul>
+						<li><b>English</b>: Intermediate (B1)</li>
+						<li><b>Russian</b>: Native</li>
+					</ul>
+				</div>
 			</section>
 		</main>
 		<footer></footer>
