@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>CV Mikalai Hasiukevich</title>
+</head>
+<body>
+	<div class="content-wrapper">
+		<header>
+			<h1>Mikalai Hasiukevich</h1>
+			<h2>Front-end Developer</h2>
+		</header>
+		<main>
+			<section class = "center-up-block">
+				<div class="contact-wrapper">
+					<h3>Contacts</h3>
+					<ul>
+						<li>+375 29 6858515</li>
+						<li>Minsk</li>
+						<li>mike80by@gmail.com</li>
+					</ul>
+				</div>
+				<figure class="img-block">
+					<img src="images/MH_img.png" alt="photo" width="300" height="300">
+				</figure>
+			</section>
+			<section class="left-block">
+				<article>
+					<h3>Summary</h3>
+					<p>Hello. You know my name from the header. So I will start without introduction. I am a junior front-end developer (without any real background) and I'm improving my skills 24/7. My main aim is to be the awesome front-end developer. I have all for that - motivation, persistence and energy. And the main thing - I adore front-end. That's why you should better to interest in my person.</p>
+				</article>
+				<div>
+					<h3>Skills</h3>
+					<ul>
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>Bootstrap</li>
+						<li>Sass</li>
+						<li>JavaScript</li>
+						<li>TypeScript</li>
+						<li>GIT</li>
+					</ul>
+				</div>
+			</section>
+			<section class="right-block">
+				<div>
+					<h3>Experience</h3>
+					<p>GitHub: <a href="https://github.com/Mike80by">https://github.com/Mike80by</a></p>
+				</div>
+				<div>
+					<h3>Education</h3>
+					<ul>
+						<li>The Rolling Scopes School</li>
+						<li>Learn.javascript.ru "JavaScript/DOM/interfaces"</li>
+						<li>Belarusian National Technical University <br>
+						"Marketing, Management and Entrepreneurship" <br>
+						Bachelor of Economics</li>
+					</ul>
+				</div>
+				<div>
+					<h3>Languages</h3>
+					<ul>
+						<li><b>English</b>: Intermediate (B1)</li>
+						<li><b>Russian</b>: Native</li>
+					</ul>
+				</div>
+			</section>
+				<div class="code-block">
+					<h3>Code</h3>
+					<code><pre>
+						function solveSudoku(matrix) {
+						  for (let i = 0, len = matrix.length; i < len; i++) {
+  							for (let j = 0, lenI = matrix[i].length; j < lenI; j++) {
+  								if (matrix[i][j] === 0) {
+  									matrix[i][j] = [1,2,3,4,5,6,7,8,9];
+  									for (let k = 0, lenIJ = matrix[i][j].length; k < lenIJ; k++) {
+  										for (let l = 1; l < lenI; l++) {
+  											if (matrix[i][j][k] === matrix[l][j]) {
+  												matrix[i][j].splice(k, 1);
+  												if (matrix[i][j].length === 1) {
+  													matrix[i][j] = matrix[i][j][0];
+  												}
+  											}
+  										}
+  									}
+  								}
+  							}
+  						}
+  						for (let i = 0, len = matrix.length; i < len; i++) {
+  							for (let j = 0, lenI = matrix[i].length; j < lenI; j++) {
+  								for (let k = 0, lenIJ = matrix[i][j].length; k < lenIJ; k++) {
+  									for (let l = 1; l < lenI; l++) {
+  										if (matrix[i][j][k] === matrix[i][l])	{
+  											matrix[i][j].splice(k, 1);
+  											if (matrix[i][j].length === 1) {
+  												matrix[i][j] = matrix[i][j][0];
+  											}
+  										}	
+  									} 
+  								}
+  							}
+  						}
+  						return matrix;
+						}
+					</pre></code>
+				</div>
+		</main>
+		<footer>
+			<p>&copy; 2018 Mike80by&Co  -  All Rights Reserved</p>
+		</footer>
+	</div>
+</body>
+</html>
